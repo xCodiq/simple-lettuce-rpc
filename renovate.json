@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "hostRules": [
+    {
+      "hostType": "maven",
+      "matchHost": "nexus.blocky.gg",
+      "username": "blocky-developer",
+      "encrypted": {
+        "password": "wcFMA/xDdHCJBTolAQ/9FQ6uS8iEYUgowBspQmalzpLrLNXxyxaDlv3K8Oj4voJEBf5KMzHDamj6Y8W90cQTdIlfgInq4Y46mJU4/gzDrx+PhNBZUXrvNrhw+g506vQIeYS+PRe/JBiemMpjj5VcluzzBM2z3XfrrWSkIqtWONQsbVLqK/hGqdW9muystRSixSaI90iZ+yY6o6PWA5wxC/2SZ+Pm/BnAq3Ua1xRE1ACHmry/7nRJRZCrFADDeXZ2erVvyDxdWwQ49kSFvZyh0dg6xeEYKiOZlK8e/z58Tug8qoavABZRrulFxiYL5rA4za2U/Ies68Z2luYoG8Rmaj+/yzjDXnfsJfrQDEp430pS8OmrGQ/JtK/gdfBHmbjxRN45ZwNaAX7TJA2AlQw20SNtivxWQrXWvCkG1JHv6v1S90b0IuNWbHA0/XQoi4FPZB0vsFsi/NL4kGsJyldM+gJW08pdj1+a+I2gls6XtAm16+DVtD36BhzFPXjcVdtGBBbKqx4ZgfKRxrdsCm4xhzZW0NJtZ5IVzbRyiwGeHXTC6fK7W8ICPBIYn1xv5OG0F8qNDSGrqhO64fxtvnRu3Ti17i/xFr6Apg3sKbid+T+XealuYwHOf1X592RBNTgmX8VUVZrNSqndRRYT+jFus3rSL3QjDYCJTplDAu0mIb/Dy9Xls7oTlibXV6/PZB7SdAE8h3xLD67d1Kdq5vteZKBVihvY36JQ5QmeA70m/uWQLDBTvL2oWIc+OEEdfHeuJIqWv8f8emHS5zViKb5+xY3otkj95D4VN89jvpwCl/wPpRM09tvfcBj8JjLmIhYrfnLaMBWDdNWi0xqU1YgHpmXRpDlq"
+      }
+    }
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump"
+      ],
+      "automerge": true
+    }
+  ]
+}
